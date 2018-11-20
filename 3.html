@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str = "Tôi yêu ngôn ngữ lập trình Javascrip";
+   var  patt = /a/g;
+
+   var result = str.match(patt);
+   var split = str.split(" ");
+
+    document.write(result.length);
+    document.write("</br>");
+    document.write(split);
+    document.write("</br>");
+    document.write(split.length);
+    document.write("</br>");
+    var res = str.replace(/Javascrip/,"Typescript");
+    document.write(res);
+</script>
+</body>
+</html>

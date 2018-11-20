@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var random10 = Math.floor(Math.random()*10);
+    var random400 = Math.floor(Math.random()*400);
+    var random50 = Math.floor(Math.random()*50+50);
+    document.write(random10+" " + random50+ " " + random400);
+    document.write("<br>");
+    document.write(Math.min(5,7,2,9));
+    document.write("<br>");
+    function luythua(number){
+        var result = Math.pow(number,53);
+        document.write(result)
+    }
+    luythua(prompt("Nhap so can tinh luy thua"));
+    document.write("<br>");
+    function dientich(radius) {
+        document.write("Dien tich hinh tron la: " + radius * radius* Math.PI);
+    }
+    dientich(prompt("Nhap ban kinh"));
+    document.write("<br>");
+
+
+</script>
+</body>
+</html>

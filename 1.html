@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var birth = new Date(1995,10,4,7);
+    var date = new Date();
+    var diff = Math.round(Math.abs((date.getTime()-birth.getTime())));
+    var timeSec = Math.round(diff/1000);
+    var timeMins = Math.round(timeSec/60);
+    var timeHour = Math.round (timeMins/60);
+    var timeDay = Math.round(timeHour/24);
+    var timeMonth =Math.round (timeDay/30);
+    var timeYear = Math.round(timeMonth/12);
+
+    document.write("Toi da song "+timeYear + " nam </br>" );
+    document.write("Toi da song "+timeMonth + " thang </br>" );
+    document.write("Toi da song "+timeDay + " ngay </br>" );
+    document.write("Toi da song "+timeHour + " gio </br>" );
+    document.write("Toi da song "+timeMins + " phut </br>" );
+    document.write("Toi da song "+timeSec + " giay </br>" );
+   </script>
+</body>
+</html>
